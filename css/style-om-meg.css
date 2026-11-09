@@ -1,0 +1,66 @@
+body {
+    position: relative;
+    background-color: rgb(52, 52, 52);
+    &::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("haugala.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+
+    }
+}
+
+
+
+#titel {
+    background-color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    margin: auto;
+
+    position: relative;
+    color: black;
+    text-align: center;
+}
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.text {
+    background-color: white;
+    height: 60px;
+    width: 210px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+}
+
+
+
+#home {
+    background-color: white;
+    height: 20px;
+    width: 60px;
+    border-radius: 10px;
+
+    position: relative;
+    color: black;
+    text-align: center ;
+    margin-left: auto;
+}
+
+#im-logo {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto
+}

@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(51, 51, 51);
+  margin-left: 150px;
+}
+
+p {color: white;
+}
+
+h2{color: white;
+}
+
+#titel
+ {color: white;
+    text-align: center;
+    margin-left: -150px;
+}
+
+#linkfisk {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#linkhøns {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#intereser {
+    color: white;
+    border-left: solid;
+    padding-left: 15px;
+}
+
+#ommeg {
+    border-left: solid;
+    padding-left: 1px;
+}
+
+#line {
+    position: absolute;
+    left: 125;
+    top: 75;
+    
+    height: 500px;
+    border-left: 2px solid rgb(255, 255, 255);
+    margin-left: -25px;
+}
+
+

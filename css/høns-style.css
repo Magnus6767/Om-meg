@@ -1,0 +1,60 @@
+body {
+    position: relative;
+    background-color: rgb(52, 52, 52);
+}
+
+#titel {
+    background-color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    margin: auto;
+
+    position: relative;
+    color: black;
+    text-align: center;
+}
+
+#home {
+    background-color: white;
+    height: 20px;
+    width: 60px;
+    border-radius: 10px;
+
+    position: relative;
+    color: black;
+    text-align: center ;
+    margin-left: auto;
+}
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.text {
+    background-color: white;
+    height: 60px;
+    width: 1000px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+}
+
+
+
+.bilde-box {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.bilde {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+}

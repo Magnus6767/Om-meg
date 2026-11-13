@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- Engelsk språk -->
-<html lang="en">
+<!-- Norsk språk -->
+<html lang="nb">
 <head>
     
     <!-- favicon -->
@@ -9,25 +9,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min Nettside</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Linker css filen -->
+    
 </head>
-<!-- Fargen på bakgrunnen og teksten -->
 <body>
     
     <div id="line"></div>
+    <!-- Lager en div som jeg gjør til en linje med css -->
 
     <!-- Største headingen -->
-    <h1 id="titel" >  Mine Nettside </h1>
+    <h1 id="titel" >  Min nettside </h1>
+
+    <!-- Navne mitt og br er line breake -->
+    <p id="magnus">Hei, jeg er <br><span>Magnus.</span></p>
+
     <!-- Paragraf med tekst og linker -->
-    <p> På denne nettsiden så kommer det litt om mine intereser og det jeg liker. </p>
+    <p>På denne nettsiden finner du litt om interessene mine og det jeg liker.</p>
 
+    <!-- linker til en annen side -->
     <h2 id="ommeg"> Om meg </h2>
-        <a href="Om.meg.html" style="color: rgb(0, 136, 247);"> <strong> Om meg </strong> </a>
+        <a class="linker" href="Om.meg.html"> <strong> Om meg </strong> </a>
 
+<!-- linker også til andre sider -->
+<h2 id="intereser"> Mine interesser </h2>
+    <a id="linkfisk" class="linker" href="index2.html" > <strong> Fiske </strong> </a>
 
-<h2 id="intereser"> Mine intereser </h2>
-    <a id="linkfisk" href="index2.html" style="color: rgb(0, 136, 247);"> <strong> Fiske </strong> </a>
-
-    <a id="linkhøns" href="høns.html" style="color: rgb(0, 136, 247);"> <strong> Høns </strong> </a>
+    <a id="linkhøns" class="linker" href="høns.html" > <strong> Høns </strong> </a>
     
 </body>
 </html>

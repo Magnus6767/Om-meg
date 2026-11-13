@@ -1,6 +1,10 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
 body {
     position: relative;
-    background-color: rgb(52, 52, 52);
+    background-color: rgb(16, 20, 23);
 }
 
 #titel {
@@ -13,18 +17,27 @@ body {
     position: relative;
     color: black;
     text-align: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
 }
 
 #home {
+    display: block;
     background-color: white;
     height: 20px;
     width: 60px;
     border-radius: 10px;
+    
 
     position: relative;
-    color: black;
     text-align: center ;
     margin-left: auto;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+#home:hover {
+    color: white;
+    transform: scale(1.1);
 }
 
 .text-box {
@@ -36,25 +49,71 @@ body {
 
 .text {
     background-color: white;
-    height: 60px;
-    width: 1000px;
+    min-height: 60px;
+    height: auto;
+    width: 100%;
+    max-width: 1000px;
     border-radius: 10px;
     color: black;
     text-align: center;
+    box-sizing: border-box;
+    /* gir tekstboxen en shadow*/
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
 }
 
 
 
-.bilde-box {
+/* såg en tutorial for dette så jeg forstår det sån halveis. Det koden gjør er at når du tar musen din over så blir bilde uskarpt og det blir vist tekst på sjermen */
+.grid {
     display: flex;
     justify-content: center;
     gap: 100px;
     flex-wrap: wrap;
+    margin: 50px;
 }
 
-.bilde {
-    background-color: white;
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 33%;
     border-radius: 10px;
-    color: black;
-    text-align: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+
 }
+
+.img-wrapper > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-wrapper > .content {
+    position: absolute;
+    inset: 0;
+    padding: 1rem;
+    background: rgba(255, 255, 255, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+    transition: 200ms ease-in-out;
+}
+
+.img-wrapper:hover > img.bilde {
+    filter: blur(5px);
+    /* når du tar musen din over så blir bilde uskarpt */
+}
+
+.img-wrapper > .content.fade {
+    opacity: 0;
+}
+
+.img-wrapper:hover > .content.fade {
+    opacity: 1;
+}
+

@@ -1,18 +1,34 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Nesten 100% like som høns css så komentaren hadde blit like uanset */
+
 body {
     margin: 0;
-    background-color: rgb(52, 52, 52);
+    background-color: rgb(16, 20, 23);
 }
 
 #home {
+    display: block;
     background-color: white;
     height: 20px;
     width: 60px;
     border-radius: 10px;
+    margin-right: 5px;
+    
 
     position: relative;
-    color: black;
     text-align: center ;
     margin-left: auto;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+    
+}
+
+#home:hover {
+    color: white;
+    transform: scale(1.1);
 }
 
 #titel {
@@ -25,6 +41,7 @@ body {
     position: relative;
     color: black;
     text-align: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
 }
 
 .text-box {
@@ -35,12 +52,17 @@ body {
 }
 
 .text {
+    /* min height og max width og box sizing gjør so at teksten ikke hopper ut av boxsen bår du gjør browser vinduet mindre */
     background-color: white;
-    height: 60px;
-    width: 1000px;
+    min-height: 60px;
+    height: auto;
+    width: 100%;
+    max-width: 1000px;
     border-radius: 10px;
     color: black;
     text-align: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
 }
 
 
@@ -60,6 +82,7 @@ body {
     overflow: hidden;
     width: 33%;
     border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
 
 }
 

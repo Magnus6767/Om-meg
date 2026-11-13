@@ -1,20 +1,42 @@
+/*  gir font til all teksten */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* lagen bagrunfarge og tar all tekst til høyre */
 body {
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(16, 20, 23);
   margin-left: 150px;
 }
 
+/* gir alle paragraf fargen hvit */
 p {color: white;
 }
 
+/* gir alle h2 fargen hvit */
 h2{color: white;
 }
 
 #titel
+/* gir farge gjør som at teksten er i mitten, gir teksten størelse og gjør som teksten ikke går til høyre */
  {color: white;
     text-align: center;
     margin-left: -150px;
+    font-size: 50px;
 }
 
+#magnus
+ {color: white;
+    text-align: left;
+    margin-left: 0;
+    font-size: 70px;
+}
+/* gir bare det som er innenfor span den fargen */
+#magnus span {
+    color: rgb(117, 215, 178);
+}
+
+/* definerer display og margin på linken */
 #linkfisk {
     display: block;
     margin-bottom: 10px;
@@ -25,6 +47,7 @@ h2{color: white;
     margin-bottom: 10px;
 }
 
+/* lager en strek på siden av teksten */
 #intereser {
     color: white;
     border-left: solid;
@@ -33,17 +56,41 @@ h2{color: white;
 
 #ommeg {
     border-left: solid;
-    padding-left: 1px;
+    padding-left: 10px;
 }
 
+/* gir linjen posisjon størelse og farge */
 #line {
     position: absolute;
     left: 125;
     top: 75;
     
-    height: 500px;
-    border-left: 2px solid rgb(255, 255, 255);
+    height: 600px;
+    border-left: 2px solid rgb(117, 215, 178);
     margin-left: -25px;
+}
+
+/* lager en box til hver ting i linker classen */
+.linker {
+    color: rgb(0, 136, 247);;
+    display: block;
+    background: rgb(117, 215, 178);
+    border-radius: 10px;
+    height: 20px;
+    width: 70px;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+    text-decoration: none;
+    
+}
+
+/* gjør som at når du tar musen din over så endre boksen seg */
+.linker:hover {
+    color: white;
+    background-color: rgb(0, 136, 247);
+    transform: scale(1.1);
+    
 }
 
 
